@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+
+    <!-- NAVIGATION BAR-->
+    <head>
+        <div style="background-color: #403D37;">
+          <nav class="navbar navbar-dark bg-dark">
+            <a class='navbar-brand' href = 'index.html' style = "color: #fecc5f;">Home</a>
+            <a class='navbar-brand' href = 'library.html'>Library</a>
+            <a class='navbar-brand' href = 'random.html'>Random</a>
+          </nav>
+        </div>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+
+    <link href = 'styles.css' rel = 'stylesheet'>
+    <title>random</title>
+
+    <body style = 'text-align: center'>
+
+      <div>
+        <h2>NO IDEA WHAT TO READ FIRST?</h2>
+        <h3 style='font-family: Georgia, serif;'>use the button below to generate a title of a random book we have on our website</h3>
+        <p>***</p>
+        <button id = "generate_idea" style ='background-color: #333333; color: #FECC5F'>GENERATE</button>
+        <p></p>
+        <h2 id = 'output' class = 'title' style = 'text-decoration-line: overline; text-decoration-color: #fecc5f; color: #337ab7; text-shadow: none'></h2>
+        <img alt = 'bulb' src = 'idea.png' style = 'width: 40%; height: 40%'>
+        <p></p>
+      </div>
+
+      <script>
+        //видавати рандомну цифру яка = ід книжки (сіквел) -> а потім селект тайтл
+        //not complete
+          function generate(){
+              function getRandomIntInclusive(min, max) {
+              min = Math.ceil(min);
+              max = Math.floor(max);
+              return Math.floor(Math.random() * (max - min + 1)) + min;}
+
+              let result = getRandomIntInclusive(1,3);
+
+              if (result == 1) {
+                  //alert('book 1')
+                  let message ='KATHERYNA';
+                  document.getElementById('output').innerHTML = message;
+              }
+              else if(result == 2) {
+                  let message ='THE GIFT OF THE MAGI';
+                  document.getElementById('output').innerHTML = message;
+              }
+              else {
+                  let message ='THE LAST LEAF';
+                  document.getElementById('output').innerHTML = message;
+              }
+            }
+              //alert(result);
+              document.querySelector('#generate_idea').addEventListener('click', generate);
+      </script>
+
+        <footer style = 'color: #337ab7; margin-bottom: 0; text-decoration:none'><a href = 'hello.html'>Contacts</a></footer>
+    </body>
+</html>

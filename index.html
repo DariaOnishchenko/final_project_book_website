@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+
+    <!-- NAVIGATION BAR-->
+    <head>
+        <div style="background-color: #403D37;">
+          <nav class="navbar navbar-dark bg-dark">
+            <a class='navbar-brand' href = 'index.html' style = "color: #fecc5f;">Home</a>
+            <a class='navbar-brand' href = 'library.html'>Library</a>
+            <a class='navbar-brand' href = 'random.html'>Random</a>
+          </nav>
+        </div>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    </head>
+    <title>home</title>
+    <link href = 'styles.css' rel = 'stylesheet'>
+
+    <body>
+
+      <!--EXTENTION OF MAIN HTML-->
+
+
+        <!--SHAPKA SAITU-->
+        <header>
+            <div class = 'shapka'>
+                <div class = 'caption'>
+                    <p class = 'blue'>-</p>
+                        <h1>BOOKS</h1>
+                    <p class ='white_no_shadow' >***</p>
+                <h2 class = 'white'>enjoy reading online</h2>
+                <p class="ghost">===</p>
+                </div>
+            </div>
+        </header>
+
+        <!--QUOTES-->
+
+        <div class = 'quote'>
+          <p class = 'caption'>“A reader lives a thousand lives before he dies . . . The man who never reads lives only one.”
+            <ul style = 'margin-left: 70%' class = 'quote'>- George R.R. Martin<b class = 'qhost'></ul></p>
+        </div>
+
+        <!--INFO-->
+
+          <section>
+            <nav class = "block">
+              <p style = 'margin: auto'><img alt = 'book_image' src = 'book.png' height = 130px></p>
+
+              <div class="dropdown" style ='margin: 3%'>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style ='background-color: #333333; color: #FECC5F'>
+                  Read Now
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" href="katheryna.html" style = 'color: #337AB7'>"Katheryna" (Shevchenko)</a></li>
+                  <li><a class="dropdown-item" href="volhvy.html" style = 'color: #337AB7'>"The Gift of the Magi" (O. Henry)</a></li>
+                  <li><a class="dropdown-item" href="leaf.html" style = 'color: #337AB7'>"The Last Leaf" (O. Henry)</a></li>
+                </div>
+              </div>
+
+            </nav>
+              <article>
+                <h3 style = 'text-align: center; text-decoration-line: overline; text-decoration-color: #fecc5f; color: #337ab7; text-shadow: none; font-family: Georgia, serif'>ABOUT US</h3>
+              <div style = 'margin-left: 3%; margin-right: 3%'>
+                <p>Hi there! This webpage provides you with an oportunity to read online without downloading pdf files on your device</p>
+                <p>This is my first project and I tried my best to design this website in the best way possible</p>
+                  <p>Here is a little guide:</p>
+                    <li>Use <a href='library.html'>"Library"</a> to look for available books to read</li>
+                    <li>The <a href='random.html'>"Random"</a> generates a book to read in case you are not sure which book you want to read now</li>
+                    <li>Use<a href='index.html'>"Home"</a> for easy navigation</li>
+                <p>Hope you find it useful. Now we have only 3 books available but I plan to add more soon! Use <a href ='hello.html'>contacts</a> in the footer to text me on Instagram about possible upgrates. Now enjoy yourself reading <ul style = 'text-align:center; color: #cfcac0 '>Daria</ul></p>
+              </div>
+              </article>
+          </section>
+
+        <!--CAROUSEL-->
+          <p class="ghost">----</p>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" style="background-image: url('bcground.png'); background-repeat: no-repeat; background-size: 100%, 100%;">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+
+              <div class="item active">
+                <a href = 'katheryna.html'><img src="kate.png" alt="book1" width = 300px height = 350px class="center"></a>
+                <div class="carousel-caption">
+                  <h3 style = 'color: #FECC5F'>TOP 1</h3>
+                  <p style = 'text-decoration-line: overline; text-decoration-color: #fecc5f; color: #f5e4d0; text-shadow: #333333; font-size: large'>KATHERYNA</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <a href = 'volhvy.html'><img src="volhvy.png" alt="book2" width = 300px height = 350px class="center"></a>
+                <div class="carousel-caption">
+                  <h3 style = 'color: #FECC5F'>TOP 2</h3>
+                  <p style = 'text-decoration-line: overline; text-decoration-color: #fecc5f; color: #337ab7; text-shadow: #333333; font-size: large'>THE GIFT OF THE MAGI</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <a href = 'leaf.html'><img src="leaf.png" alt="book3" width = 300px height = 350px class="center"></a>
+                <div class="carousel-caption">
+                  <h3 style = 'color: #FECC5F'>TOP 3</h3>
+                  <p style = 'text-decoration-line: overline; text-decoration-color: #fecc5f; color: #f5e4d0; text-shadow: #333333; font-size: large'>THE LAST LEAF</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <!--FOOTER-->
+        <footer style = 'color: #337ab7'><a href = 'hello.html'>Contacts</a></footer>
+    </body>
+</html>
